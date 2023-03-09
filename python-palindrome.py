@@ -4,8 +4,7 @@
 # DISPLAY 'Palindrome Checker'
 # DISPLAY 'Please String:'
 # x is equal to INPUT
-# y is equal to REVERSE of x
-# IF x is equal to y 
+# IF x is equal to the REVERSE of x
 #     DISPLAY 'The input is Palindrome'
 # ELSE 
 #     DISPLAY 'The input isn't a Palindrome'
