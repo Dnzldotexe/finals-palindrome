@@ -13,13 +13,26 @@
 
 
 # SOURCE CODE
-print('\n')
-print("Palindrome Checker")
-x = str(input("Enter String: "))
+import sys
 
-# compares the x to the reversed x
-# [::-1] returns string in reverse
-if x == x[::-1]:
-    print(f"'{x}' is a palindrome")
-else:
-    print(f"'{x}' isn't a palindrome")
+while True:
+    print('\n')
+    print("Welcome to Palindrome Checker")
+    x = str(input("Please Enter a String: "))
+
+    # compares the x to the reversed x
+    # [::-1] returns string in reverse
+    if x == x[::-1]:
+        print(f"'{x}' is a palindrome")
+    else:
+        print(f"'{x}' isn't a palindrome")
+    
+    continue_yn = str(input("Continue [Y/N]?: ")).upper()
+    if (continue_yn == 'Y'):
+        continue
+    if (continue_yn == 'N'):
+        print("Palindrome Checker Terminated!")
+        sys.exit()
+    else:
+        print("Invalid Input!")
+        sys.exit()
